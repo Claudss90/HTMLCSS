@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(63, 1, 16);
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        .especial{
+            background-color: goldenrod;
+        }
+
+        .especial::before{
+            content: '✯';
+        }
+
+        .especial::after{
+            content: '✯';
+          
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Claudss90">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com">Canal do YouTube</a></li>
+        <li><a href="https://www.linkedin.com/in/claudss90/" class="especial">Linkedin</a></li>
+    </ul>
+    
+</body>
+</html>
