@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  grid-template-rows: 100px 25px 100px 100px 100px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.topo {
+  text-align: center;
+  background-color: red;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 5;
+}
+
+.menu {
+  text-align: center;
+  background-color: green;
+  grid-row: 2 / 3;
+  grid-column: 1 / 5;
+  grid-template-columns: 1/2fr;
+}
+
+.principal {
+  text-align: center;
+  background-color: blue;
+  grid-area: 3 / 1 / 7 / 4;
+}
+
+.secundario {
+  text-align: center;
+  background-color: purple;
+  grid-row: 3 / 7;
+  grid-column: 4 / 5;
+}
+
+.rodape {
+  text-align: center;
+  background-color: rgb(119, 58, 58);
+  grid-row: 7 / 8;
+  grid-column: 1 / 5;
+}
